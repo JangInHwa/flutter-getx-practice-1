@@ -70,7 +70,12 @@ class MyHomePage extends StatelessWidget {
               ));
             },
           ),
-          TextButton(child: const Text('Get.defaultDialog()'), onPressed: () {}),
+          TextButton(
+            child: const Text('Get.defaultDialog()'),
+            onPressed: () {
+              Get.defaultDialog(title: 'Dialog title', middleText: 'content');
+            },
+          ),
           TextButton(child: const Text('Get.dialog()'), onPressed: () {}),
           TextButton(child: const Text('Get.bottomSheet()'), onPressed: () {}),
         ],
