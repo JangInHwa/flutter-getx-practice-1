@@ -54,7 +54,12 @@ class MyHomePage extends StatelessWidget {
             },
           ),
           TextButton(child: const Text('Get.offAll()'), onPressed: () {}),
-          TextButton(child: const Text('Get.snackbar()'), onPressed: () {}),
+          TextButton(
+            child: const Text('Get.snackbar()'),
+            onPressed: () {
+              Get.snackbar('Snackbar title', 'Hello World!');
+            },
+          ),
           TextButton(child: const Text('Get.showSnackbar()'), onPressed: () {}),
           TextButton(child: const Text('Get.defaultDialog()'), onPressed: () {}),
           TextButton(child: const Text('Get.dialog()'), onPressed: () {}),
