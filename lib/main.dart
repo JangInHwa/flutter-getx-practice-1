@@ -89,7 +89,20 @@ class MyHomePage extends StatelessWidget {
               ));
             },
           ),
-          TextButton(child: const Text('Get.bottomSheet()'), onPressed: () {}),
+          TextButton(
+            child: const Text('Get.bottomSheet()'),
+            onPressed: () {
+              Get.bottomSheet(
+                Container(
+                  color: Colors.white,
+                  height: 100,
+                  child: const Center(
+                    child: Text('bottom sheet'),
+                  ),
+                ),
+              );
+            },
+          ),
         ],
       ),
     );
