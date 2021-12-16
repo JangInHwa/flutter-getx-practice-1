@@ -76,7 +76,19 @@ class MyHomePage extends StatelessWidget {
               Get.defaultDialog(title: 'Dialog title', middleText: 'content');
             },
           ),
-          TextButton(child: const Text('Get.dialog()'), onPressed: () {}),
+          TextButton(
+            child: const Text('Get.dialog()'),
+            onPressed: () {
+              Get.dialog(const Dialog(
+                child: SizedBox(
+                  height: 100,
+                  child: Center(
+                    child: Text('dialog'),
+                  ),
+                ),
+              ));
+            },
+          ),
           TextButton(child: const Text('Get.bottomSheet()'), onPressed: () {}),
         ],
       ),
